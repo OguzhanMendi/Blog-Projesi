@@ -1,0 +1,52 @@
+C:\Users\ikbal.cinek\source\repos\BlogProject5432_25062022\BlogProject.Dal\bin\Debug\netcoreapp3.1\BlogProject.Dal.deps.json
+C:\Users\ikbal.cinek\source\repos\BlogProject5432_25062022\BlogProject.Dal\bin\Debug\netcoreapp3.1\BlogProject.Dal.dll
+C:\Users\ikbal.cinek\source\repos\BlogProject5432_25062022\BlogProject.Dal\bin\Debug\netcoreapp3.1\BlogProject.Dal.pdb
+C:\Users\ikbal.cinek\source\repos\BlogProject5432_25062022\BlogProject.Dal\bin\Debug\netcoreapp3.1\BlogProject.Model.dll
+C:\Users\ikbal.cinek\source\repos\BlogProject5432_25062022\BlogProject.Dal\bin\Debug\netcoreapp3.1\BlogProject.Model.pdb
+C:\Users\ikbal.cinek\source\repos\BlogProject5432_25062022\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.csproj.AssemblyReference.cache
+C:\Users\ikbal.cinek\source\repos\BlogProject5432_25062022\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ikbal.cinek\source\repos\BlogProject5432_25062022\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.AssemblyInfoInputs.cache
+C:\Users\ikbal.cinek\source\repos\BlogProject5432_25062022\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.AssemblyInfo.cs
+C:\Users\ikbal.cinek\source\repos\BlogProject5432_25062022\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.csproj.CoreCompileInputs.cache
+C:\Users\ikbal.cinek\source\repos\BlogProject5432_25062022\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.csproj.CopyComplete
+C:\Users\ikbal.cinek\source\repos\BlogProject5432_25062022\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.dll
+C:\Users\ikbal.cinek\source\repos\BlogProject5432_25062022\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.pdb
+C:\Users\OGUZHAN\Desktop\PROJECT\BlogProject.Dal\bin\Debug\netcoreapp3.1\BlogProject.Dal.deps.json
+C:\Users\OGUZHAN\Desktop\PROJECT\BlogProject.Dal\bin\Debug\netcoreapp3.1\BlogProject.Dal.dll
+C:\Users\OGUZHAN\Desktop\PROJECT\BlogProject.Dal\bin\Debug\netcoreapp3.1\BlogProject.Dal.pdb
+C:\Users\OGUZHAN\Desktop\PROJECT\BlogProject.Dal\bin\Debug\netcoreapp3.1\BlogProject.Model.dll
+C:\Users\OGUZHAN\Desktop\PROJECT\BlogProject.Dal\bin\Debug\netcoreapp3.1\BlogProject.Model.pdb
+C:\Users\OGUZHAN\Desktop\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.csproj.AssemblyReference.cache
+C:\Users\OGUZHAN\Desktop\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OGUZHAN\Desktop\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.AssemblyInfoInputs.cache
+C:\Users\OGUZHAN\Desktop\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.AssemblyInfo.cs
+C:\Users\OGUZHAN\Desktop\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.csproj.CoreCompileInputs.cache
+C:\Users\OGUZHAN\Desktop\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.csproj.CopyComplete
+C:\Users\OGUZHAN\Desktop\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.dll
+C:\Users\OGUZHAN\Desktop\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.pdb
+C:\PROJECT\BlogProject.Dal\bin\Debug\netcoreapp3.1\BlogProject.Dal.deps.json
+C:\PROJECT\BlogProject.Dal\bin\Debug\netcoreapp3.1\BlogProject.Dal.dll
+C:\PROJECT\BlogProject.Dal\bin\Debug\netcoreapp3.1\BlogProject.Dal.pdb
+C:\PROJECT\BlogProject.Dal\bin\Debug\netcoreapp3.1\BlogProject.Model.dll
+C:\PROJECT\BlogProject.Dal\bin\Debug\netcoreapp3.1\BlogProject.Model.pdb
+C:\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.csproj.AssemblyReference.cache
+C:\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.AssemblyInfoInputs.cache
+C:\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.AssemblyInfo.cs
+C:\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.csproj.CoreCompileInputs.cache
+C:\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.csproj.CopyComplete
+C:\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.dll
+C:\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.pdb
+C:\PROJECT 2 (1)\PROJECT\BlogProject.Dal\bin\Debug\netcoreapp3.1\BlogProject.Dal.deps.json
+C:\PROJECT 2 (1)\PROJECT\BlogProject.Dal\bin\Debug\netcoreapp3.1\BlogProject.Dal.dll
+C:\PROJECT 2 (1)\PROJECT\BlogProject.Dal\bin\Debug\netcoreapp3.1\BlogProject.Dal.pdb
+C:\PROJECT 2 (1)\PROJECT\BlogProject.Dal\bin\Debug\netcoreapp3.1\BlogProject.Model.dll
+C:\PROJECT 2 (1)\PROJECT\BlogProject.Dal\bin\Debug\netcoreapp3.1\BlogProject.Model.pdb
+C:\PROJECT 2 (1)\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.csproj.AssemblyReference.cache
+C:\PROJECT 2 (1)\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROJECT 2 (1)\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.AssemblyInfoInputs.cache
+C:\PROJECT 2 (1)\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.AssemblyInfo.cs
+C:\PROJECT 2 (1)\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.csproj.CoreCompileInputs.cache
+C:\PROJECT 2 (1)\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.csproj.CopyComplete
+C:\PROJECT 2 (1)\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.dll
+C:\PROJECT 2 (1)\PROJECT\BlogProject.Dal\obj\Debug\netcoreapp3.1\BlogProject.Dal.pdb

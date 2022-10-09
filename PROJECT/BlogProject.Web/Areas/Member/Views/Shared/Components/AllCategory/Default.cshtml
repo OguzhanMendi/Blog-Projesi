@@ -1,0 +1,16 @@
+﻿@model List<CategoryComponentDTO>
+
+<div class="list-group">
+
+    @foreach (var item in Model)
+    {
+        @*<a href="#" class="list-group-item-action active">@item.Name </a>*@
+
+        <a class="dropdown-item " asp-controller="Article" asp-action="ArticleList"  asp-route-id="@item.ID" >@item.Name</a>
+
+    }
+
+
+
+
+</div>

@@ -1,0 +1,85 @@
+﻿@model List<UserArticleListVM>
+
+
+
+@foreach (var item in Model)
+{
+
+    <div class="card card-widget col-md-10">
+
+        <div class="user-block">
+            <img class="img-circle" style="border-radius:50%;" src="@item.ImagePath" alt="User Image">
+            <span class="username"><a asp-controller="User" asp-action="Detail" asp-route-id="@item.UserId">@item.UserFullName</a></span>
+            <span class="description">Shared publicly - @item.CreatedDate</span>
+        </div>
+
+
+        <div class="card-header">
+            <div class="user-block">
+
+
+            </div>
+            <!-- /.user-block -->
+            <div class="card-tools">
+                <button type="button" class="btn btn-tool" title="Mark as read">
+                    <i class="far fa-circle"></i>
+                </button>
+                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <!-- /.card-tools -->
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+            <img class="img-fluid pad" src="@item.ImagePath" alt="Photo">
+
+            <p><b>@item.Title</b></p>
+            <p>@item.Content.Substring(0, 40) <a asp-controller="Home" asp-action="Detail" asp-route-id="@item.ArticleID">  devamını okumak için tıklayınız...</a></p>
+            <p>kategoriler:</p>
+            @for (int i = 0; i < item.CategoryName.Count; i++)
+            {
+
+                <p class="text-center"> <span class="badge badge-gradient-primary float-left"> @item.CategoryName[i],</span></p>
+            }
+
+            @*<a asp-controller="Comment" asp-action="Create" asp-route-id="@item.ID">devamını okumak için tıklayınız...</a>*@
+            <p class="text-center"> <span class="badge badge-gradient-secondary float-right">Like Sayı :@item.Likes.Count - Yorum Sayı :@item.Comments.Count</span></p>
+        </div>
+
+        <div class="card-footer card-comments">
+
+
+            @foreach (var item1 in item.Comments)
+            {
+                <img class="img-circle" style="width:40px; " src="@item1.AppUser.ImagePath" alt="User Image">
+                <b>@item1.AppUser.FullName</b>
+                <div class="comment-text">
+
+
+                    <p><b>@item1.Text</b></p>
+                </div>
+
+            }
+
+        </div>
+    </div>
+    <!-- /.card-body -->
+    <div class="card-footer card-comments">
+
+        <!-- /.card-comment -->
+        <div class="card-comment">
+
+        </div>
+        <!-- /.card-comment -->
+    </div>
+
+
+
+    <!-- /.card-footer -->
+    <!-- /.card-footer -->
+
+}

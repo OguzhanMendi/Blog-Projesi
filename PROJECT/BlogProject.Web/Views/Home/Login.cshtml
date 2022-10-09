@@ -1,0 +1,53 @@
+﻿
+@model LoginDTO
+
+
+<div class="container">
+    <h1 class="display-4 text-center">Login User</h1>
+    <hr />
+
+
+    <script src="~/jquery/jquery.min.js"></script>
+    <script src="~/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <link href="~/temp/dist/userLogin.css" rel="stylesheet" />
+    <link href="~/temp/dist/style.css" rel="stylesheet" />
+    <div class="row">
+
+        <div class="col-md-4 offset-4">
+            <form asp-action="Update">
+
+
+
+                <div class="form-group">
+                    <input type="email" asp-for="Mail" class="form-control" placeholder="Email">
+                    <div class="input-group-append">
+
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div class="form-group">
+                    <input type="password" asp-for="Password" class="form-control" placeholder="Password">
+
+                </div>
+
+
+                <div class="form-group">
+                    <button type="submit" asp-action="Login" class="btn btn-danger">Sign In</button>
+                </div>
+
+
+            </form>
+        </div>
+
+    </div>
+
+
+</div>

@@ -1,0 +1,51 @@
+﻿@model  UpdateMailDTO
+
+
+<div class="container">
+    <script src="~/jquery/jquery.min.js"></script>
+    <script src="~/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <h1 class="display-4 text-center">Mail Güncelleme</h1>
+    <hr />
+    <div class="row">
+        <div class="col-md-4 offset-4">
+            @if (ViewBag.IsSuccess == true)
+            {
+                <div class="alert alert-success" role="alert">
+                    Mailiniz Başarıyla Değişti...
+                </div>
+            }
+            @if (ViewBag.IsFailied == true)
+            {<div class="alert alert-default-danger" role="alert">
+                    Birşeyler Ters Gitti... Tekrar Deneyiniz...
+                </div>
+
+            }
+
+        </div>
+        <div class="col-md-4 offset-4">
+            <form asp-action="UpdateMail">
+
+
+
+                <div class="form-group">
+                    <label asp-for="Mail" class="control-label"></label>
+                    <input asp-for="Mail" class="form-control" type="email" />
+                    <span asp-validation-for="Mail" class="text-danger"></span>
+                </div>
+
+
+                <input type="hidden" asp-for="ID" />
+                <input type="hidden" asp-for="IdentityId" />
+
+                <div class="form-group">
+                    <input type="submit" value="Change Mail " class="btn btn-primary" />
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+
+</div>

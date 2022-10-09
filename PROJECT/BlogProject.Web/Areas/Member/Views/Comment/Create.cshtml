@@ -1,0 +1,152 @@
+﻿@model  CreateCommentVM
+
+
+
+
+<div class="card card-widget col-md-10 offset-sm-1">
+    <div class="card-header">
+        <div class="user-block">
+
+            <img class="img-circle" style="border-radius:30%;" src="@Model.AppUser.ImagePath" alt="User Image">
+            <span class="username"><a asp-controller="AppUser" asp-action="detail" asp-route-id="@Model.AppUser.ID">@Model.AppUser.FullName</a></span>
+            <span class="description">Tarafından Paylaşıldı - @Model.CreatedDate.ToString("dd MMMM dddd yyyy")</span>
+
+        </div>
+        <!-- /.user-block -->
+        <!-- /.card-tools -->
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <img class="img-fluid pad" src="@Model.ImagePath" alt="Photo">
+
+        <p><b>@Model.Title</b></p>
+
+        <p><b>@Model.Content</b></p>
+       
+      
+
+        <form>
+            <div>
+                @*<button asp-route-id="@Model.ID" type="button" value="Like" class="btn btn-default btn-sm"><i class="far fa-thumbs-up"></i> Like</button>*@
+                @if (Model.Likes.Any(a => a.AppUserId == Model.AppUserId && a.ArticleId == Model.ID))
+                {
+                    <a asp-action="UnLike" asp-route-id="@Model.ID" class="float-sm-left  btn btn-default btn-sm"><i class="far fa-thumbs-up"></i>UnLike</a>
+                }
+                else
+                {
+
+                    <a asp-action="Like" asp-route-id="@Model.ID" class="float-sm-left  btn btn-default btn-sm"><i class="far fa-thumbs-up"></i>Like</a>
+
+                }
+            </div>
+        </form>
+
+        <p class="text-center"> <span class="badge badge-info float-right">Okunma Sayısı: @Model.ViewCount</span></p>
+    </div>
+    <!-- /.card-body -->
+    <div class="card-footer card-comments">
+
+        <!-- /.card-comment -->
+        <div class="card-comment">
+
+            @foreach (var item in Model.Comments)
+            {
+                <img class="img-circle" style="border-radius:30%;" src="@item.AppUser.ImagePath" alt="User Image">
+                <p><b>@item.AppUser.FullName</b></p>
+                <p><b>@item.Text</b></p>
+                @if (item.AppUser.ID == Model.AppUserId)
+                {
+
+
+                    <a class="btn btn-danger btn-sm float-sm-right" asp-action="Delete" asp-route-id="@item.ID">
+                        <i class="fas fa-trash">
+                        </i>
+                        Sil
+                    </a>
+
+                    <a class="btn btn-info btn-sm float-sm-right" data-toggle="modal" data-target="#Modal2-@(item.ID)" asp-action="Update" asp-route-id="@item.ID">
+                        <i class="fas fa-pencil-alt">
+                        </i>
+                        Güncelle
+                    </a>
+
+                    @*<div class="form-group">
+                            <input type="submit" value="Update Comment" data-toggle="modal" data-target="#Modal2-@(item.ID)" asp-action="Update" asp-route-id="@item.ID" class="btn btn-info" />
+
+                        </div>*@
+                }
+                <div>
+                    <div class="modal" id="Modal2-@(item.ID)">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <form asp-action="Update" asp-route-id="@item.ID">
+
+                                    <div class="modal-body">
+
+                                        <div class="form-group">
+
+
+                                            <input type="hidden" asp-for="@Model.ArticleId" />
+
+
+                                            @*@Html.TextArea("yorum", @comment.Text, new { @class = "form-control" })*@
+                                            <input asp-for="@Model.Text" class="form-control" , asp-route-id="text" type="text" />
+
+                                            <span asp-validation-for="@Model.Text" class="text-danger"></span>
+
+
+                                        </div>
+
+                                    </div>
+                                    <br />
+                                    <div class="form-group">
+                                        <input type="submit" value="Oluştur" class="btn btn-info" />
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            }
+        </div>
+        <!-- /.card-comment -->
+    </div>
+
+
+    <form asp-action="Create">
+        <div class="form-group">
+            <input type="hidden" asp-for="@Model.ID" />
+            <input asp-for="@Model.Text" class="form-control" />
+            <span asp-validation-for="@Model.Text" class="text-danger"></span>
+
+            <div class="form-group float-lg-left">
+                <a class="btn btn-info btn-" asp-controller="AppUser" asp-action="Index">
+                    <i class="fas fa-backspace">
+                    </i>
+                    Geri Dön
+                </a>
+            </div>
+
+            <div class="form-group float-lg-right">
+                <input type="submit" value="Create Comment " class="btn btn-primary" />
+            </div>
+        </div>
+
+
+
+    </form>
+  
+
+    <!-- /.card-footer -->
+    <!-- /.card-footer -->
+</div>
+
+
+
+
+
+

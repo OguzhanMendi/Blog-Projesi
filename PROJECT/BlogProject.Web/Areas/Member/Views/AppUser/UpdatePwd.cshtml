@@ -1,0 +1,57 @@
+﻿@model UpdatePwdDTO
+
+<div class="container">
+    <h1 class="display-4 text-center">Şifre Güncelleme</h1>
+    <hr />
+    <div class="row">
+        <div class="col-md-4 offset-4">
+            @if (ViewBag.IsSuccess == true)
+            {
+                <div class="alert alert-success" role="alert">
+                    Şifreniz Başarı İle Değişti
+                </div>
+            }
+             @if (ViewBag.IsFailied == true)
+            { <div class="alert alert-default-danger" role="alert">
+                    Şifreniz Son 3 şifre ile Aynı Olamaz..
+                </div>
+
+            }
+            
+        </div>
+            <div class="col-md-4 offset-4">
+                <form asp-action="UpdatePwd">
+                    @*<div asp-validation-summary="ModelOnly" class="text-danger">  </div>
+                    <div class="form-group">
+                        <label asp-for="CurrentPassword" class="control-label"></label>
+                        <input asp-for="CurrentPassword" class="form-control" />
+                        <span asp-validation-for="CurrentPassword" class="text-danger"></span>
+                    </div>*@
+
+
+                    <div class="form-group">
+                        <label asp-for="Password" class="control-label"></label>
+                        <input asp-for="Password" class="form-control" type="password" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label asp-for="ConfirmPassword" class="control-label"></label>
+                        <input asp-for="ConfirmPassword" class="form-control" />
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+                    <input type="hidden" asp-for="ID" />
+                    <input type="hidden" asp-for="IdentityId" />
+                 
+                    <div class="form-group">
+                        <input type="submit" value="Şifre Güncelle" class="btn btn-primary" />
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+
+    </div>

@@ -1,0 +1,68 @@
+﻿@model UpdateAppUserDTO
+
+
+<div class="container">
+    <h1 class="display-4 text-center">Kullanıcı Güncelleme</h1>
+    <hr />
+
+
+    <script src="~/jquery/jquery.min.js"></script>
+    <script src="~/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+    <div class="row">
+
+        <div class="col-md-4 offset-4">
+            <form asp-action="Update" method="post" enctype="multipart/form-data">
+
+
+
+                <div class="form-group">
+                    <label asp-for="FirstName" class="control-label"></label>
+                    <input asp-for="FirstName" class="form-control" type="text" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="LastName" class="control-label"></label>
+                    <input asp-for="LastName" class="form-control" type="text" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+
+                @*<div class="form-group">
+            <label asp-for="Mail" class="control-label"></label>
+            <input asp-for="Mail" class="form-control" type="email" />
+            <span asp-validation-for="Mail" class="text-danger"></span>
+        </div>*@
+                <div class="form-group">
+                    <input asp-for="ImagePath" type="hidden" />
+                    <input asp-for="ImagePath" src="@Model.ImagePath" type="image" />
+
+                </div>
+                <div class="form-group">
+                    <label asp-for="Image">Image</label>
+                    <input asp-for="Image" class="form-control" type="file" />
+
+                </div>
+
+
+                <input type="hidden" asp-for="ID" />
+                <input type="hidden" asp-for="IdentityId" />
+                <input type="hidden" asp-for="Password" />
+                <input type="hidden" asp-for="UserName" />
+
+
+                <div class="form-group">
+                    <input type="submit" value="Güncelle" class="btn btn-primary" />
+                 
+                </div>
+
+              
+
+            </form>
+        </div>
+
+    </div>
+
+
+</div>

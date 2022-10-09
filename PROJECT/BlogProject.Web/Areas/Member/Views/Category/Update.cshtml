@@ -1,0 +1,48 @@
+﻿@model UpdateCategoryDTO
+
+<div class="container">
+    <h1 class="display-4 text-center">Kategori Güncelle</h1>
+    <hr />
+    <script src="~/jquery/jquery.min.js"></script>
+    <script src="~/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+    <div class="row">
+
+        <div class="col-md-4 offset-4">
+            <form asp-action="Update">
+
+
+
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" type="text" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label"></label>
+                    <input asp-for="Description" class="form-control" type="text" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+
+
+
+
+                <div class="form-group">
+                    <input type="submit" value="Güncelle" class="btn btn-danger" />
+
+                    <input type="submit" value="Geri Dön" asp-action="List" class="btn btn-success" style="margin-right:auto" />
+                </div>
+
+
+               
+
+            </form>
+        </div>
+
+    </div>
+
+
+</div>

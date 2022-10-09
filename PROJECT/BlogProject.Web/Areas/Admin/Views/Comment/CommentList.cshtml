@@ -1,0 +1,93 @@
+﻿@model List<CommentListDTO>
+<!-- /.card-header -->
+<div class="card-body p-0">
+    <table class="table table-striped projects">
+        <thead>
+            <tr>
+                <th style="width: 1%">
+                    #
+                </th>
+                <th style="width: 20%">
+                    Full Name
+                </th>
+                <th style="width: 20%">
+                    Fotoğraf
+                </th>
+
+                <th style="width: 30%">
+                    Comment
+                </th>
+
+
+                <th style="width: 20%">
+                </th>
+            </tr>
+        </thead>
+        @foreach (var item in Model)
+        {
+
+
+            <tbody>
+                <tr>
+                    <td>
+                        #
+                    </td>
+                    <td>
+                        <a>
+                            @item.FullName
+                        </a>
+                        <br>
+                        <small>
+
+                        </small>
+                    </td>
+                    <td>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <img alt="user" class="table-avatar" src="@item.AppUser.ImagePath">
+                            </li>
+
+
+                        </ul>
+                    </td>
+                    <td>
+                        <a>
+                            @item.Text
+                        </a>
+                        <br>
+                        <small>
+
+                        </small>
+                    </td>
+
+
+                    <td class="project-actions text-right">
+
+                        @if (item.Statu != BlogProject.Model.Enums.Statu.Active)
+                        {
+                            <a class="btn btn-info btn-sm" asp-action="Active" asp-route-id="@item.ID">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+                                Active
+                            </a>
+                        }
+                        <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.ID">
+                            <i class="fas fa-trash">
+                            </i>
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+
+
+
+
+
+
+                <tr>
+
+
+            </tbody>
+        }
+    </table>
+</div>

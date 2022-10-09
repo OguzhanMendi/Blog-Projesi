@@ -1,0 +1,63 @@
+﻿@model ArticleDetailVM
+
+
+
+<div class="card card-widget col-md-10 offset-sm-1">
+    <div class="card-header">
+        <div class="user-block">
+
+            <img class="img-circle" style="border-radius:30%;" src="@Model.AppUser.ImagePath" alt="User Image">
+            <span class="username"><a asp-controller="User" asp-action="Detail" asp-route-id="@Model.AppUser.ID">@Model.AppUser.FullName</a></span>
+            <span class="description">Shared publicly - @Model.CreatedDate</span>
+        </div>
+        <!-- /.user-block -->
+        <!-- /.card-tools -->
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <img class="img-fluid pad" src="@Model.ImagePath" alt="Photo">
+
+        <p><b>@Model.Title</b></p>
+
+        <p><b>@Model.Content</b></p>
+        <form>
+            <div>
+               
+             
+            </div>
+        </form>
+
+        <p class="text-center"> <span class="badge badge-info float-right">Okunma Sayısı: @Model.ViewCount</span></p>
+    </div>
+    <!-- /.card-body -->
+    <div class="card-footer card-comments">
+        <div class="card-comment">
+
+        </div>
+        <!-- /.card-comment -->
+        <div class="card-comment">
+
+            @foreach (var item in Model.Comments)
+            {
+                <img class="img-circle" style="width:40px; " src="@item.AppUser.ImagePath" alt="User Image">
+
+                <b>@item.AppUser.FullName</b>
+
+                 <p><b>@item.Text</b></p>
+
+
+
+            }
+        </div>
+        <!-- /.card-comment -->
+    </div>
+    @*<div>
+            <a asp-action="Delete" asp-route-id="@Model.CommentsDTO.Select(a=>a.ID)" class="btn btn-danger">Sil</a>
+        </div>*@
+
+
+   
+
+    <!-- /.card-footer -->
+    <!-- /.card-footer -->
+</div>

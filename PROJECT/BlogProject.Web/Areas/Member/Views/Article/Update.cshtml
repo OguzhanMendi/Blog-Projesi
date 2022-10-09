@@ -1,0 +1,80 @@
+﻿@model UpdateArticleVM
+
+
+    <div class="container">
+        <h1 class="display-4 text-center">Makale Güncelle</h1>
+        <hr />
+
+
+        <script src="~/jquery/jquery.min.js"></script>
+        <script src="~/jquery-validate/jquery.validate.min.js"></script>
+        <script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+        <div class="row">
+
+            <div class="col-md-4 offset-4">
+                <form asp-action="Update" method="post" enctype="multipart/form-data">
+
+
+
+                    <div class="form-group">
+                        <label asp-for="Title" class="control-label"></label>
+                        <input asp-for="Title" class="form-control" type="text" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Content" class="control-label"></label>
+                        @*<input asp-for="Content" class="form-control" type="text" />*@
+                        <textarea class="form-control" asp-for="@Model.Content" placeholder="Experience"></textarea>
+                        <span asp-validation-for="Content" class="text-danger"></span>
+                    </div>
+
+                   
+                    <div class="form-group">
+                        <input asp-for="ImagePath" type="hidden" />
+                        <input asp-for="ImagePath" src="@Model.ImagePath" type="image" />
+
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Image">Image</label>
+                        <input asp-for="Image" class="form-control" type="file" />
+
+                    </div>
+
+
+                    <input asp-for="AppUserID" type="hidden" />
+
+                    <input asp-for="ID" type="hidden" />
+
+
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.CategoryDTOs, "Category", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @for (int i = 0; i < Model.CategoryDTOs.Count; i++)
+                            {
+                                <div class="col-md-2">
+                                    @Html.CheckBoxFor(Model => Model.CategoryDTOs[i].IsSelect)
+                                    <label> @Model.CategoryDTOs[i].Name </label>
+                                    @Html.HiddenFor(Model => Model.CategoryDTOs[i].ID)
+                                </div>
+                            }
+                        </div>
+
+
+
+
+                        <div class="form-group">
+                            <input type="submit" value="Güncelle" class="btn btn-primary" />
+                        </div>
+
+                      
+</form>
+            </div>
+
+        </div>
+
+
+    </div>
+
